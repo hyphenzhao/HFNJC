@@ -21,6 +21,7 @@ import schat
 import video
 
 urlpatterns = [
+    url(r'^yikai/', include('yikai.urls')),
 	url(r'^schat/', include('schat.urls')),
 	url(r'^video/', include('video.urls')),
     url(r'^admin/', admin.site.urls),
