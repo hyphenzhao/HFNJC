@@ -6,6 +6,6 @@ app_name = 'video'
 
 
 urlpatterns = [
-	url(r'^(?P<no>[0-9]+)$', views.Videos.as_view()),
-	url(r'^(?P<no>[0-9]+).html$', views.Compatible.as_view()),
+	url(r'^(?P<no>)$', views.Videos.as_view()),
+	url(r'^(?P<no>).html$', views.Compatible.as_view()),
 ]
