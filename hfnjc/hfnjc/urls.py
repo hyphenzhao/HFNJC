@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^yikai/', include('yikai.urls')),
 	url(r'^schat/', include('schat.urls')),
 	url(r'^video/', include('video.urls')),
+    url(r'^wearable/', include('wearable.urls')),
     url(r'^admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
