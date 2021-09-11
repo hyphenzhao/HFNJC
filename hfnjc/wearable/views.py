@@ -5,8 +5,6 @@ from django.http import HttpResponse
 
 class ServerIP(APIView):
 	def get(self, request):
-		response_data = {
-			"server_ip":  "192.168.137.1" 
-		}
-		return HttpResponse(json.dumps(response_data), content_type="application/json")
+		response_data =  "192.168.137.1" 
+		return HttpResponse(response_data, content_type="application/json")
 
